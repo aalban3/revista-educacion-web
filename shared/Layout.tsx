@@ -1,7 +1,13 @@
 import React from "react";
+import { Footer } from "./Footer";
+import { Header } from "./Header";
 
-type Props = {};
-
-export const Layout = (props: Props) => {
-  return <div>Layout</div>;
+export const Layout: React.FC<any> = ({ children }) => {
+  return (
+    <>
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
 };

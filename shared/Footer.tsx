@@ -1,7 +1,5 @@
 import React from "react";
 
-type Props = {};
-
-export const Footer = (props: Props) => {
+export const Footer: React.FC<any> = () => {
   return <div>Footer</div>;
 };

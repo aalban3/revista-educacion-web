@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+import {
+  NavBar,
+  HeaderMenu,
+  MenuItem,
+  Logo,
+} from "../styles/components/header";
 
-type Props = {}
-
-export const Header = (props: Props) => {
+export const Header: React.FC<any> = () => {
   return (
-    <div>Header</div>
-  )
-}
+    <NavBar>
+      <Logo />
+      <HeaderMenu>
+        <MenuItem>Editorial</MenuItem>
+        <MenuItem>Noticias</MenuItem>
+        <MenuItem>Opciones</MenuItem>
+      </HeaderMenu>
+    </NavBar>
+  );
+};
