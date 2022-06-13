@@ -2,20 +2,24 @@ import styled from "styled-components";
 
 export const NavBar = styled.nav`
   width: 100%;
-  height: 100px;
+  height: 200px;
   background-color: orange;
+  display: flex;
+  align-items: center;
 `;
 
 export const HeaderMenu = styled.ul`
   color: black;
+  list-style-type: none;
+  display: flex;
 `;
 
 export const MenuItem = styled.li`
   color: black;
+  margin-left: 30px;
+  margin-right: 30px;
 `;
 
-export const Logo = styled.img`
-  background-color: white;
-  width: 20px;
-  height: 20px;
+export const InfoOptions = styled.li`
+  color: black;
 `;
